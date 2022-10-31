@@ -1,23 +1,20 @@
 {
+  "name": "netlify-hackathon",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "echo 'build'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "next": "13.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "name": "netlify-hackathon-cron",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/4KQA/netlify-hackathon-cron.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/4KQA/netlify-hackathon-cron/issues"
-  },
-  "homepage": "https://github.com/4KQA/netlify-hackathon-cron#readme",
-  "description": ""
+  "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0"
+  }
 }
