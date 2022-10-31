@@ -19,6 +19,6 @@ const apiHandler = async (event, context) => {
   }
 };
 
-const handler = schedule("0 * * * *", apiHandler); // every minute
+const handler = schedule("* * * * *", apiHandler); // every minute
 
 export { handler };
