@@ -17,17 +17,8 @@ const apiHandler = async (event, context) => {
   } else {
     console.log("All good - waiting for next heartbeat");
   }
-  // const date = new Date();
-  // return {
-  //   statusCode: 200,
-  //   body: JSON.stringify({
-  //     message: date.toDateString(),
-  //     info: "Made request to endpoint",
-  //   }),
-  // };
-  return { hakuna: "matata" };
 };
 
-const handler = schedule("* * * * *", apiHandler); // every minute
+const handler = schedule("0 * * * *", apiHandler); // every minute
 
 export { handler };
