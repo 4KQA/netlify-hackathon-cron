@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import { schedule } from "@netlify/functions";
 
-const apiHandler = async (event, context) => {
+const handler = async (event, context) => {
   const appResponse = await fetch(
     "https://hackathon-cron.netlify.app/api/heartbeat"
   );
@@ -18,7 +18,5 @@ const apiHandler = async (event, context) => {
     console.log("All good - waiting for next heartbeat");
   }
 };
-
-const handler = schedule("* * * * *", apiHandler); // every minute
 
 export { handler };
