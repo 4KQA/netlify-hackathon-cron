@@ -15,4 +15,4 @@ const apiHandler = async (event, context) => {
   };
 };
 
-export const handler = schedule("0/60 * * * *", apiHandler); // every 5 seconds
+export const handler = schedule("* * * * *", apiHandler); // every 5 seconds
