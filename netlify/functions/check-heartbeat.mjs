@@ -3,7 +3,7 @@ import { schedule } from "@netlify/functions";
 
 const apiHandler = async (event, context) => {
   const appResponse = await fetch(
-    "https://rad-dodol-525b01.netlify.app/api/heartbeat"
+    "https://hackathon-cron.netlify.app/api/heartbeat"
   );
 
   console.log(`Heartbeat responded with ${appResponse.status}`);
