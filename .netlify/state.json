@@ -1,3 +1,17 @@
 {
-	"siteId": "e5ed493f-24be-4148-8590-34e137293fa1"
+	"siteId": "e5ed493f-24be-4148-8590-34e137293fa1",
+	"geolocation": {
+		"data": {
+			"city": "Copenhagen",
+			"country": {
+				"code": "DK",
+				"name": "Denmark"
+			},
+			"subdivision": {
+				"code": "84",
+				"name": "Capital Region"
+			}
+		},
+		"timestamp": 1667219670330
+	}
 }
